@@ -30,6 +30,7 @@ map("i", "<A-j>", "<esc><cmd>m .+1<cr>==gi", { desc = "Move down" })
 map("i", "<A-k>", "<esc><cmd>m .-2<cr>==gi", { desc = "Move up" })
 map("v", "<A-j>", ":m '>+1<cr>gv=gv", { desc = "Move down" })
 map("v", "<A-k>", ":m '<-2<cr>gv=gv", { desc = "Move up" })
+map("v", "p", '"_dP"', { desc = "Paste over" })
 
 -- buffers
 map("n", "<S-h>", "<cmd>bprevious<cr>", { desc = "Prev buffer" })
