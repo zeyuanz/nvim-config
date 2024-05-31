@@ -17,7 +17,7 @@ local opt = vim.opt
 opt.autowrite = true -- Enable auto write
 opt.clipboard = "unnamedplus" -- Sync with system clipboard
 opt.completeopt = "menu,menuone,noselect"
-opt.conceallevel = 3 -- Hide * markup for bold and italic
+opt.conceallevel = 0 -- Hide nothing
 opt.confirm = true -- Confirm to save changes before exiting modified buffer
 opt.cursorline = true -- Enable highlighting of the current line
 opt.expandtab = true -- Use spaces instead of tabs
@@ -91,3 +91,8 @@ vim.o.formatexpr = "v:lua.require'lazyvim.util'.format.formatexpr()"
 
 -- Fix markdown indentation settings
 vim.g.markdown_recommended_style = 0
+-- Function folding
+-- shortkeys: 1) zR open all folds 2) zM close all folds 3) za toggle fold
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+vim.cmd([[ set nofoldenable]])
