@@ -37,6 +37,7 @@ return {
             ensure_installed = {
                 "lua_ls", -- lsp for lua
                 "pyright", --- lsp for python
+                "clangd",
             },
         })
 
