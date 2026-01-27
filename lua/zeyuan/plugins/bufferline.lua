@@ -18,9 +18,6 @@ return {
 				close_command = "bdelete! %d", -- can be a string | function, | false see "Mouse actions"
 				right_mouse_command = "bdelete! %d", -- can be a string | function | false, see "Mouse actions"
 				diagnostics = "nvim_lsp",
-				always_show_bufferline = false,
-				auto_toggle_bufferline = true,
-				enforce_regular_tabs = true,
 				offsets = {
 					{
 						filetype = "NvimTree",
