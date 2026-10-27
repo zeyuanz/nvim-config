@@ -17,6 +17,9 @@ return {
 				show_hidden = true,
 			},
 			skip_confirm_for_simple_edits = true,
+            lsp_file_methods = {
+                autosave_changes = "unmodified",
+            },
 			float = {
 				-- Padding around the floating window
 				padding = 2,
